@@ -1,0 +1,104 @@
+using System.IO;
+using System.Runtime.InteropServices;
+
+namespace CommonUtils;
+
+[StructLayout(LayoutKind.Explicit)]
+public struct RDoubleField
+{
+	[FieldOffset(0)]
+	public double DoubleVal;
+
+	[FieldOffset(7)]
+	public byte Byte1;
+
+	[FieldOffset(6)]
+	public byte Byte2;
+
+	[FieldOffset(5)]
+	public byte Byte3;
+
+	[FieldOffset(4)]
+	public byte Byte4;
+
+	[FieldOffset(3)]
+	public byte Byte5;
+
+	[FieldOffset(2)]
+	public byte Byte6;
+
+	[FieldOffset(1)]
+	public byte Byte7;
+
+	[FieldOffset(0)]
+	public byte Byte8;
+
+	public RDoubleField(double value)
+	{
+		Byte1 = (Byte2 = (Byte3 = (Byte4 = 0)));
+		Byte5 = (Byte6 = (Byte7 = (Byte8 = 0)));
+		DoubleVal = value;
+	}
+
+	public RDoubleField(byte[] bs, int offset)
+	{
+		DoubleVal = 0.0;
+		Byte1 = bs[offset];
+		Byte2 = bs[offset + 1];
+		Byte3 = bs[offset + 2];
+		Byte4 = bs[offset + 3];
+		Byte5 = bs[offset + 4];
+		Byte6 = bs[offset + 5];
+		Byte7 = bs[offset + 6];
+		Byte8 = bs[offset + 7];
+	}
+
+	public RDoubleField(Stream stream, int offset)
+	{
+		DoubleVal = 0.0;
+		stream.Position = offset;
+		Byte1 = (byte)stream.ReadByte();
+		Byte2 = (byte)stream.ReadByte();
+		Byte3 = (byte)stream.ReadByte();
+		Byte4 = (byte)stream.ReadByte();
+		Byte5 = (byte)stream.ReadByte();
+		Byte6 = (byte)stream.ReadByte();
+		Byte7 = (byte)stream.ReadByte();
+		Byte8 = (byte)stream.ReadByte();
+	}
+
+	public void Fill(byte[] bs, int offset)
+	{
+		bs[offset] = Byte1;
+		bs[offset + 1] = Byte2;
+		bs[offset + 2] = Byte3;
+		bs[offset + 3] = Byte4;
+		bs[offset + 4] = Byte5;
+		bs[offset + 5] = Byte6;
+		bs[offset + 6] = Byte7;
+		bs[offset + 7] = Byte8;
+	}
+
+	public void Fill(Stream stream, int offset)
+	{
+		stream.Position = offset;
+		stream.WriteByte(Byte1);
+		stream.WriteByte(Byte2);
+		stream.WriteByte(Byte3);
+		stream.WriteByte(Byte4);
+		stream.WriteByte(Byte5);
+		stream.WriteByte(Byte6);
+		stream.WriteByte(Byte7);
+		stream.WriteByte(Byte8);
+	}
+
+	public static implicit operator double(RDoubleField value)
+	{
+		return value.DoubleVal;
+	}
+
+	public static implicit operator RDoubleField(double value)
+	{
+		return new RDoubleField(value);
+	}
+}

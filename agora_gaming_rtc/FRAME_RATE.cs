@@ -1,0 +1,12 @@
+namespace agora_gaming_rtc;
+
+public enum FRAME_RATE
+{
+	FRAME_RATE_FPS_1 = 1,
+	FRAME_RATE_FPS_7 = 7,
+	FRAME_RATE_FPS_10 = 10,
+	FRAME_RATE_FPS_15 = 15,
+	FRAME_RATE_FPS_24 = 24,
+	FRAME_RATE_FPS_30 = 30,
+	FRAME_RATE_FPS_60 = 60
+}

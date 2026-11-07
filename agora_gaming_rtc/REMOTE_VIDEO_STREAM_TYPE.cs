@@ -1,0 +1,7 @@
+namespace agora_gaming_rtc;
+
+public enum REMOTE_VIDEO_STREAM_TYPE
+{
+	REMOTE_VIDEO_STREAM_HIGH,
+	REMOTE_VIDEO_STREAM_LOW
+}

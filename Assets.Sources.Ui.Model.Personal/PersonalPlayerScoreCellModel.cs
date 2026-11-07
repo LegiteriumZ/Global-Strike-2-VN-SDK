@@ -1,0 +1,30 @@
+using Assets.Sources.Ui.Model.Common;
+using NetData;
+
+namespace Assets.Sources.Ui.Model.Personal;
+
+public class PersonalPlayerScoreCellModel : CommonIndividualScoreCellModel
+{
+	public override void CreateViewModel()
+	{
+		base.CreateViewModel();
+		_viewModel.ResourceBundleName = "uiprefabs/personal";
+		_viewModel.ResourceAssetName = "personalplayerscorecell";
+	}
+
+	protected override void UpdateScore(OneKillInfoData data)
+	{
+		_viewModel.PlayerScoreString1 = data.KillNum.ToString();
+		_viewModel.PlayerScoreString2 = data.BeKillNum.ToString();
+	}
+
+	protected override int UpdateHonoray(OneKillInfoData data)
+	{
+		int index = 1;
+		index = SetHonoray(data.Ace, index, ref CommonIndividualScoreCellModel.AceAsset);
+		index = SetHonoray(data.Ace2, index, ref CommonIndividualScoreCellModel.Ace2Asset);
+		index = SetHonoray(data.Ace3, index, ref CommonIndividualScoreCellModel.Ace3Asset);
+		index = SetHonoray(data.KdKing, index, ref CommonIndividualScoreCellModel.KdKingAsset);
+		return SetHonoray(data.Mvp, index, ref CommonIndividualScoreCellModel.MvpAsset);
+	}
+}

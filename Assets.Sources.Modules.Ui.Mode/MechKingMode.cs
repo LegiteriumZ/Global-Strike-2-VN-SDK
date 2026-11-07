@@ -1,0 +1,35 @@
+using Assets.Sources.Ui.Model.Common;
+using Assets.Sources.Ui.Model.Group;
+using Assets.Sources.Ui.Model.MechKing;
+
+namespace Assets.Sources.Modules.Ui.Mode;
+
+public class MechKingMode : AbstractMode
+{
+	public MechKingMode(Contexts contexts)
+		: base(contexts)
+	{
+		AddPlaybackSystem(new PlayerBagModel());
+		AddPlaybackSystem(new MechKingMechModel());
+		RadarMapModel system = new RadarMapModel();
+		AddPlaybackSystem(system);
+		MiniMapModel system2 = new MiniMapModel();
+		AddPlaybackSystem(system2);
+		TeamScoreModel system3 = new TeamScoreModel();
+		AddPlaybackSystem(system3);
+		KillMessageModel system4 = new KillMessageModel();
+		AddPlaybackSystem(system4);
+		PlayerStateModel system5 = new PlayerStateModel();
+		AddPlaybackSystem(system5);
+		WeaponStateModel system6 = new WeaponStateModel();
+		AddPlaybackSystem(system6);
+		AddPlaybackSystem(new CommonPlayerHonoraryModel());
+		AddPlaybackSystem(new CommonKillBroadModel());
+		AddPlaybackSystem(new CommonGameOverModel());
+		AddPlaybackSystem(new GroupBestKillModel());
+		AddPlaybackSystem(new BestKillModel());
+		AddPlaybackSystem(new MechKingSelectModel());
+		MechKingScoreInfoModel system7 = new MechKingScoreInfoModel();
+		AddPlaybackSystem(system7);
+	}
+}

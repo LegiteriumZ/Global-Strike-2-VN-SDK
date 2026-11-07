@@ -1,0 +1,186 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SSJJEntitas_Library">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\SSJJEntitas_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SSJJ.Contract">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\SSJJ.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Entitas">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\Entitas.dll</HintPath>
+    </Reference>
+    <Reference Include="SSJJPhysics_Library">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\SSJJPhysics_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="base.net">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\base.net.dll</HintPath>
+    </Reference>
+    <Reference Include="physics.net">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\physics.net.dll</HintPath>
+    </Reference>
+    <Reference Include="SSJJAsset_Library">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\SSJJAsset_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="SSJJUIEditor_Library">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\SSJJUIEditor_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="SSJJBase_Library">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\SSJJBase_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="SSJJNetworking_Library">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\SSJJNetworking_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="SSJJRunTimeDataSample_Library">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\SSJJRunTimeDataSample_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="SSJJUserCmd_Library">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\SSJJUserCmd_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SSJJSceneLoader_Library">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\SSJJSceneLoader_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="weaponPredicateNet.net">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\weaponPredicateNet.net.dll</HintPath>
+    </Reference>
+    <Reference Include="SSJJAnim_Library">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\SSJJAnim_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="ssjj.net">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\ssjj.net.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="SSJJUniRx_Library">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\SSJJUniRx_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Loxodon.Framework.View">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\Loxodon.Framework.View.dll</HintPath>
+    </Reference>
+    <Reference Include="Loxodon.Framework.Binding">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\Loxodon.Framework.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="configNet">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\configNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="itween.net">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\itween.net.dll</HintPath>
+    </Reference>
+    <Reference Include="SSJJUf3d_Library">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\SSJJUf3d_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="SSJJIK_Library">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\SSJJIK_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="SSJJAvater_Library">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\SSJJAvater_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="SSJJSpine_Library">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\SSJJSpine_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Entitas.VisualDebugging.Unity">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\Entitas.VisualDebugging.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="RenderHeads.AVProMovieCapture.Runtime">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\RenderHeads.AVProMovieCapture.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="SSJJMath_Library">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\SSJJMath_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="DebugUtils">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\DebugUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Loxodon.Framework">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\Loxodon.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="ArabicSupport">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\ArabicSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="zlib.net">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\zlib.net.dll</HintPath>
+    </Reference>
+    <Reference Include="LZ4">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="Entitas.Utils">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\Entitas.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>..\..\..\..\Roaming\VTCMobile\TruyKich\battle\1\SSJJ_BattleClient_Unity_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
